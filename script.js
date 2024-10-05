@@ -67,4 +67,15 @@ document.addEventListener("DOMContentLoaded", function () {
             <line x1="1" y1="9" x2="9" y2="1" stroke="black" stroke-width="2"/>
         </svg>
     `;
+
+    // Add hover effects to the minimize and close buttons for full selection
+    const buttons = document.querySelectorAll('.buttons span');
+    buttons.forEach(button => {
+        button.addEventListener('mouseover', function () {
+            button.style.backgroundColor = '#dcdcdc'; // Hover effect for buttons
+        });
+        button.addEventListener('mouseout', function () {
+            button.style.backgroundColor = '#f0f0f0'; // Default state for buttons
+        });
+    });
 });
