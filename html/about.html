@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Black and White, Vintage MacOS Style */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: url('/images/mp.png') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'VT323', monospace; /* MacOS-like retro font */
+            color: black;
+            background-color: white;
+        }
+
+        /* Dithering effect */
+        .container {
+            width: 600px;
+            padding: 20px;
+            background: white;
+            border: 2px solid black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            filter: contrast(100%) grayscale(100%);
+        }
+
+        h1, p {
+            text-align: center;
+        }
+
+        /* Text styling */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Simulating dithering pixel art for images */
+        .dithered-img {
+            width: 100px;
+            height: 100px;
+            background: url('/images/jafu.png') no-repeat center center;
+            background-size: cover;
+            image-rendering: pixelated; /* Simulates low-res image dithering */
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>About Me</h1>
+    <!-- Dithered Image -->
+    <div class="dithered-img"></div>
+    <!-- Information about me -->
+    <p>
+        Hello, my name is Javier :)
+    </p>
+</div>
+</body>
+</html>

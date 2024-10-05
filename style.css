@@ -1,20 +1,20 @@
-/* Style for Mac OS 9 Look */
+
 body {
   margin: 0;
   font-family: 'VT323', sans-serif; /* Retro-style font for that old-school vibe */
-  background: url('bg.jpg') no-repeat center center fixed;
+  background: url('/images/bg.jpg') no-repeat center center fixed;
   background-size: cover;
   color: black;
 }
 
 /* Menu bar */
 .menu-bar {
-  background-color: #dcdcdc; /* Light grey, similar to Mac OS 8 */
+  background-color: #dcdcdc;
   padding: 10px;
   display: flex;
   justify-content: flex-start;
   border-bottom: 2px solid #888;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .menu {
@@ -33,12 +33,12 @@ body {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 18px; /* Adjusted font size to match old-school feel */
+  font-size: 18px;
   padding: 5px 10px;
   display: block;
   border-radius: 4px;
   cursor: pointer;
-  font-family: 'VT323', sans-serif; /* Applies to the menu bar */
+  font-family: 'VT323', sans-serif;
 }
 
 .menu-item a:hover {
@@ -58,7 +58,7 @@ body {
   padding: 0;
   margin: 0;
   z-index: 1;
-  font-family: 'VT323', sans-serif; /* Applies to dropdown text */
+  font-family: 'VT323', sans-serif;
 }
 
 .dropdown li {
@@ -77,19 +77,16 @@ body {
   background-color: #b0b0b0;
 }
 
-/* Mac OS 9 styled window */
 .mac-window {
   width: 400px;
   margin: 50px auto;
   border: 2px solid #666;
   background-color: #f0f0f0;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   font-family: 'VT323', sans-serif;
 }
 
-/* Title bar with proper MacOS 9 style */
 .title-bar {
-  background-color: #c0c0c0;
   color: black;
   padding: 5px;
   display: flex;
@@ -97,7 +94,6 @@ body {
   align-items: center;
   border-bottom: 2px solid #666;
   position: relative;
-  border: 2px solid #666;
   background: linear-gradient(to bottom, #dcdcdc 0%, #c0c0c0 100%);
 }
 
@@ -122,28 +118,27 @@ body {
   font-weight: bold;
   font-size: 14px;
   z-index: 2;
-  background-color: #c0c0c0; /* Make sure the title is not crossed */
+  background-color: #c0c0c0;
   padding: 0 10px;
 }
 
-/* Buttons properly styled for Mac OS 9 */
 .buttons {
   position: absolute;
-  right: 10px; /* Positioned on the right side */
+  right: 10px;
   display: flex;
   z-index: 3;
 }
 
 .buttons span {
-  width: 14px; /* Reduced size to match Mac OS 9 */
-  height: 14px; /* Reduced size to match Mac OS 9 */
+  width: 14px;
+  height: 14px;
   display: inline-flex;
   justify-content: center;
-  align-items: center; /* Centering the SVG */
+  align-items: center;
   margin-left: 5px;
   background-color: #f0f0f0;
   border: 1px solid #666;
-  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
