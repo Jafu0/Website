@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatIT Landing Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        img, video {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="/images/cat.jpg" alt="Cat" id="catImage">
+    
+    <video id="bsodVideo" src="/images/bsod.mp4" style="display: none;" autoplay></video>
+    
+    <script>
+        // Function to request fullscreen for the video
+        function requestFullscreenVideo(videoElement) {
+            if (videoElement.requestFullscreen) {
+                videoElement.requestFullscreen();
+            } else if (videoElement.webkitRequestFullscreen) { // Safari
+                videoElement.webkitRequestFullscreen();
+            } else if (videoElement.msRequestFullscreen) { // IE11
+                videoElement.msRequestFullscreen();
+            }
+        }
+
+        // Wait 2 seconds before playing the video
+        setTimeout(() => {
+            document.getElementById('catImage').style.display = 'none';
+            const video = document.getElementById('bsodVideo');
+            video.style.display = 'block';
+            requestFullscreenVideo(video);
+            video.play();
+        }, 2000); // 2 seconds
+    </script>
+</body>
+</html>
