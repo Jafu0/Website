@@ -1,0 +1,77 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Container that holds the profile and buttons */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.link-button {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 50px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+}
+
+/* Individual button colors */
+.link-button.instagram {
+    background-color: #E1306C; /* Instagram Pink */
+}
+
+.link-button.facebook {
+    background-color: #1877F2; /* Facebook Blue */
+}
+
+.link-button.github {
+    background-color: #333; /* GitHub Dark */
+}
+
+.link-button.discord {
+    background-color: #7289DA; /* Discord Blue */
+}
+
+.link-button.email {
+    background-color: #555; /* Generic color for email */
+}
+
+/* Hover effects */
+.link-button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #444; /* Slightly darker background on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 500px) {
+    .link-button {
+        font-size: 16px;
+    }
+}
